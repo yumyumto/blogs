@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class Login extends StatelessWidget {
-  const Login({super.key});
+class ForgetPassword extends StatelessWidget {
+  const ForgetPassword({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -9,13 +9,13 @@ class Login extends StatelessWidget {
       backgroundColor: Colors.deepOrangeAccent,
       appBar: AppBar(
         centerTitle: true,
-        title: Text("ورود"),
+        title: Text("ثبت نام"),
         backgroundColor: Colors.black,
         elevation: 1,
       ),
       body: SafeArea(
         child: Center(
-          child: Text("ورود"),
+          child: Text("ثبت نام"),
         ),
       ),
     );

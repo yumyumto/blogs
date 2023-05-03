@@ -1,9 +1,34 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_blog/password_forget.dart';
 import 'package:flutter_blog/sign_in.dart';
 import 'package:flutter_blog/login.dart';
 
 class LoginAndSignInPage extends StatelessWidget {
   const LoginAndSignInPage({super.key});
+
+  void navigateToLogin(BuildContext context) {
+    Navigator.of(context).push(
+      MaterialPageRoute(
+        builder: (BuildContext context) => Login(),
+      ),
+    );
+  }
+
+  void navigateToSignIn(BuildContext context) {
+    Navigator.of(context).push(
+      MaterialPageRoute(
+        builder: (BuildContext context) => SignIn(),
+      ),
+    );
+  }
+
+  void passwordForget(BuildContext context) {
+    Navigator.of(context).push(
+      MaterialPageRoute(
+        builder: (BuildContext context) => ForgetPassword(),
+      ),
+    );
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -15,7 +40,7 @@ class LoginAndSignInPage extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               SizedBox(
-                height: 100.0,
+                height: 20.0,
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
@@ -50,11 +75,7 @@ class LoginAndSignInPage extends StatelessWidget {
                       color: Colors.black),
                 ),
                 onPressed: () {
-                  Navigator.of(context).push(
-                    MaterialPageRoute(
-                      builder: (BuildContext context) => Login(),
-                    ),
-                  );
+                  navigateToLogin(context);
                 },
               ),
 
@@ -69,12 +90,16 @@ class LoginAndSignInPage extends StatelessWidget {
                   style: TextStyle(fontSize: 16.0, fontWeight: FontWeight.w900),
                 ),
                 onPressed: () {
-                  Navigator.of(context).push(
-                    MaterialPageRoute(
-                      builder: (BuildContext context) => SignIn(),
-                    ),
-                  );
+                  navigateToSignIn(context);
                 },
+              ),
+
+              TextButton(
+                style: TextButton.styleFrom(
+                  foregroundColor: Colors.black,
+                ),
+                child: Text("فراموشی رمز عبور"),
+                onPressed: () {},
               ),
             ],
           ),

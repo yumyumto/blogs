@@ -14,7 +14,9 @@ class SignIn extends StatelessWidget {
         elevation: 1,
       ),
       body: SafeArea(
-        child: Text("ثبت نام"),
+        child: Center(
+          child: Text("ثبت نام"),
+        ),
       ),
     );
   }
