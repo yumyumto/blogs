@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_blog/sign_in.dart';
 
-class HoemScreen extends StatelessWidget {
-  const HoemScreen({super.key});
+class LoginPage extends StatelessWidget {
+  const LoginPage({super.key});
 
   @override
   Widget build(BuildContext context) {

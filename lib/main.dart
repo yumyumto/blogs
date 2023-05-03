@@ -14,7 +14,7 @@ class Application extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(fontFamily: "vazir"),
-      home: HoemScreen(),
+      home: LoginPage(),
     );
   }
 }
