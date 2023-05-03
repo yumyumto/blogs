@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class SignIn extends StatelessWidget {
-  const SignIn({super.key});
+class Login extends StatelessWidget {
+  const Login({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -9,12 +9,12 @@ class SignIn extends StatelessWidget {
       backgroundColor: Colors.deepOrangeAccent,
       appBar: AppBar(
         centerTitle: true,
-        title: Text("ثبت نام"),
+        title: Text("ورود"),
         backgroundColor: Colors.black,
         elevation: 1,
       ),
       body: SafeArea(
-        child: Text("ثبت نام"),
+        child: Text("ورود"),
       ),
     );
   }

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_blog/login_page.dart';
+import 'package:flutter_blog/login_sign_in_page.dart';
 
 
 void main() {
@@ -14,7 +14,7 @@ class Application extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(fontFamily: "vazir"),
-      home: LoginPage(),
+      home: LoginAndSignInPage(),
     );
   }
 }
