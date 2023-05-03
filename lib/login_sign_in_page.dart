@@ -99,7 +99,9 @@ class LoginAndSignInPage extends StatelessWidget {
                   foregroundColor: Colors.black,
                 ),
                 child: Text("فراموشی رمز عبور"),
-                onPressed: () {},
+                onPressed: () {
+                  passwordForget(context);
+                },
               ),
             ],
           ),
