@@ -9,13 +9,13 @@ class ForgetPassword extends StatelessWidget {
       backgroundColor: Colors.deepOrangeAccent,
       appBar: AppBar(
         centerTitle: true,
-        title: Text("ثبت نام"),
+        title: Text("بازیابی رمز عبور"),
         backgroundColor: Colors.black,
         elevation: 1,
       ),
       body: SafeArea(
         child: Center(
-          child: Text("ثبت نام"),
+          child: Text("بازیابی رمز عبور"),
         ),
       ),
     );

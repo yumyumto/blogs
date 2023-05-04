@@ -6,26 +6,10 @@ import 'package:flutter_blog/login.dart';
 class LoginAndSignInPage extends StatelessWidget {
   const LoginAndSignInPage({super.key});
 
-  void navigateToLogin(BuildContext context) {
+  void navigateToLogin(BuildContext context, Widget page) {
     Navigator.of(context).push(
       MaterialPageRoute(
-        builder: (BuildContext context) => Login(),
-      ),
-    );
-  }
-
-  void navigateToSignIn(BuildContext context) {
-    Navigator.of(context).push(
-      MaterialPageRoute(
-        builder: (BuildContext context) => SignIn(),
-      ),
-    );
-  }
-
-  void passwordForget(BuildContext context) {
-    Navigator.of(context).push(
-      MaterialPageRoute(
-        builder: (BuildContext context) => ForgetPassword(),
+        builder: (BuildContext context) => page,
       ),
     );
   }
@@ -75,7 +59,7 @@ class LoginAndSignInPage extends StatelessWidget {
                       color: Colors.black),
                 ),
                 onPressed: () {
-                  navigateToLogin(context);
+                  navigateToLogin(context, Login());
                 },
               ),
 
@@ -90,7 +74,7 @@ class LoginAndSignInPage extends StatelessWidget {
                   style: TextStyle(fontSize: 16.0, fontWeight: FontWeight.w900),
                 ),
                 onPressed: () {
-                  navigateToSignIn(context);
+                  navigateToLogin(context, SignIn());
                 },
               ),
 
@@ -100,7 +84,7 @@ class LoginAndSignInPage extends StatelessWidget {
                 ),
                 child: Text("فراموشی رمز عبور"),
                 onPressed: () {
-                  passwordForget(context);
+                  navigateToLogin(context, ForgetPassword());
                 },
               ),
             ],
